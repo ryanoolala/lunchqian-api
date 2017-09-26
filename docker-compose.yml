@@ -1,13 +1,13 @@
 version: '2'
 services:
   couch_db:
-    image: couchdb
+    image: apache/couchdb
     ports:
       - "5984:5984"
     environment:
       COUCHDB_USER: admin
       COUCHDB_PASSWORD: password
     volumes:
-      - couch_db:/usr/local/var/lib/couchdb
+      - couch_db:/opt/couchdb/data
 volumes:
   couch_db: {}
