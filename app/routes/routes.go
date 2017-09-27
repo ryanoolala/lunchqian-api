@@ -16,6 +16,34 @@ func (_ tApp) Index(
 }
 
 
+type tLocations struct {}
+var Locations tLocations
+
+
+func (_ tLocations) List(
+		) string {
+	args := make(map[string]string)
+	
+	return revel.MainRouter.Reverse("Locations.List", args).URL
+}
+
+func (_ tLocations) RandomLocation(
+		) string {
+	args := make(map[string]string)
+	
+	return revel.MainRouter.Reverse("Locations.RandomLocation", args).URL
+}
+
+func (_ tLocations) Show(
+		locationID int,
+		) string {
+	args := make(map[string]string)
+	
+	revel.Unbind(args, "locationID", locationID)
+	return revel.MainRouter.Reverse("Locations.Show", args).URL
+}
+
+
 type tStatic struct {}
 var Static tStatic
 
