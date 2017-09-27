@@ -1,5 +1,10 @@
 version: '2'
 services:
+  lunchqian_api:
+    build: .
+    ports:
+      - "9000:9000"
+    command: "revel run github.com/lunchqian-api"
   couch_db:
     image: apache/couchdb
     ports:
