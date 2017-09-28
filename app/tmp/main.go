@@ -53,7 +53,7 @@ func main() {
 				},
 			},
 			&revel.MethodType{
-				Name: "RandomLocation",
+				Name: "Random",
 				Args: []*revel.MethodArg{ 
 				},
 				RenderArgNames: map[int][]string{ 

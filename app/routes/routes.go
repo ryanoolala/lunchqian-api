@@ -27,11 +27,11 @@ func (_ tLocations) List(
 	return revel.MainRouter.Reverse("Locations.List", args).URL
 }
 
-func (_ tLocations) RandomLocation(
+func (_ tLocations) Random(
 		) string {
 	args := make(map[string]string)
 	
-	return revel.MainRouter.Reverse("Locations.RandomLocation", args).URL
+	return revel.MainRouter.Reverse("Locations.Random", args).URL
 }
 
 func (_ tLocations) Show(

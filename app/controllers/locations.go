@@ -21,7 +21,7 @@ func (c Locations) List() revel.Result {
   return c.RenderJSON(locations)
 }
 
-func (c Locations) RandomLocation() revel.Result {
+func (c Locations) Random() revel.Result {
   rand.Seed(time.Now().UnixNano())
   return c.RenderJSON(locations[rand.Intn(len(locations))])
 }

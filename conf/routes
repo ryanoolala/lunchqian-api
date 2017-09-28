@@ -20,4 +20,4 @@ GET     /public/*filepath                       Static.Serve("public")
 
 GET     /locations                              Locations.List
 GET     /locations/:locationID                  Locations.Show
-GET     /locations/randomLocation               Locations.RandomLocation
+GET     /locations/random                       Locations.Random
