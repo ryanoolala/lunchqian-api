@@ -1,7 +1,7 @@
 // This is a hack!
 
 (function() {
-  let sounds = [new Audio("./shake.mp3")];
+  let sounds = [new Audio("../../public/webqian/shake.mp3")];
   let shakeAmount = 0;
   let shakeWindow = [];
   let divined = false;

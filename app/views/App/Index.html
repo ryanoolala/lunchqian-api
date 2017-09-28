@@ -1,21 +1,42 @@
-{{set . "title" "Home"}}
-{{template "header.html" .}}
+<!doctype html>
+<html>
 
-<header class="jumbotron" style="background-color:#A9F16C">
-  <div class="container">
-    <div class="row">
-      <h1>It works!</h1>
-      <p></p>
+<head>
+  <script src="../../public/webqian/qian.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../public/webqian/qian.css">
+</head>
+
+<body>
+  <div class="debug" id="output">lol</div>
+  <div class="debug" id="output3">lol3</div>
+  <div class="debug" id="output2">lol2</div>
+
+  <div class="gong">
+    <div class="qian" data-offset="0">
+      ?
+    </div>
+
+    <div class="qian" data-offset="0">
+      ?
+    </div>
+
+    <div class="qian" data-offset="0">
+      ?
+    </div>
+
+    <div class="qian" data-offset="0">
+      ?
+    </div>
+    <div class="qian" data-offset="0">
+      ?
     </div>
   </div>
-</header>
 
-<div class="container">
-  <div class="row">
-    <div class="span6">
-      {{template "flash.html" .}}
+  <div class="gong-shell-wrapper">
+    <div class="gong-shell">
+      Tap for sound
     </div>
   </div>
-</div>
+</body>
 
-{{template "footer.html" .}}
+</html>
