@@ -46,23 +46,8 @@ func main() {
 	revel.RegisterController((*controllers.Locations)(nil),
 		[]*revel.MethodType{
 			&revel.MethodType{
-				Name: "List",
-				Args: []*revel.MethodArg{ 
-				},
-				RenderArgNames: map[int][]string{ 
-				},
-			},
-			&revel.MethodType{
 				Name: "Random",
 				Args: []*revel.MethodArg{ 
-				},
-				RenderArgNames: map[int][]string{ 
-				},
-			},
-			&revel.MethodType{
-				Name: "Show",
-				Args: []*revel.MethodArg{ 
-					&revel.MethodArg{Name: "locationID", Type: reflect.TypeOf((*int)(nil)) },
 				},
 				RenderArgNames: map[int][]string{ 
 				},
