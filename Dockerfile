@@ -8,7 +8,8 @@ RUN set -ex \
 # Install go libraries
 RUN set -ex \
     && go get github.com/revel/revel \
-    && go get github.com/revel/cmd/revel
+    && go get github.com/revel/cmd/revel \
+    && go get github.com/flimzy/kivik
 #    && wget -O glide.zip https://github.com/Masterminds/glide/releases/download/0.10.2/glide-0.10.2-linux-386.zip \
 #    && unzip glide.zip \
 #   && rm glide.zip \

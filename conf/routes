@@ -18,6 +18,6 @@ GET     /public/*filepath                       Static.Serve("public")
 # Catch all
 *       /:controller/:action                    :controller.:action
 
-GET     /locations                              Locations.List
-GET     /locations/:locationID                  Locations.Show
+#GET     /locations                              Locations.List
+#GET     /locations/:locationID                  Locations.Show
 GET     /locations/random                       Locations.Random
